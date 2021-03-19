@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59.937" height="53.225" viewBox="0 0 59.937 53.225">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_933" data-name="Rechteck 933" width="59.937" height="53.225" fill="#fae91f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_1861" data-name="Gruppe 1861" transform="translate(0 0)">
+    <path id="Pfad_1989" data-name="Pfad 1989" d="M1.248,0,0,26.612,1.248,53.225h2.5L4.77,31.379l9.8,1.666V20.179l-9.8,1.665L3.746,0Z" fill="#fae91f"/>
+    <path id="Pfad_1990" data-name="Pfad 1990" d="M84.154,0,83.128,21.845l-9.8-1.666V33.046l9.8-1.666,1.025,21.845h2.5l1.248-26.6V26.6L86.651,0Z" transform="translate(-27.963)" fill="#fae91f"/>
+    <g id="Gruppe_1860" data-name="Gruppe 1860" transform="translate(0 0)">
+      <g id="Gruppe_1859" data-name="Gruppe 1859" clip-path="url(#clip-path)">
+        <path id="Pfad_1991" data-name="Pfad 1991" d="M35.312,19.063l-7.729,5.551V43.15L35.312,48.7H45.66l7.729-5.551V24.614L45.66,19.063ZM48.261,33.882a7.774,7.774,0,1,1-7.774-7.774,7.782,7.782,0,0,1,7.774,7.774" transform="translate(-10.518 -7.269)" fill="#fae91f"/>
+        <path id="Pfad_1992" data-name="Pfad 1992" d="M39.91,39.763a5.277,5.277,0,1,0,5.277-5.277,5.276,5.276,0,0,0-5.277,5.277" transform="translate(-15.218 -13.15)" fill="#fae91f"/>
+      </g>
+    </g>
+  </g>
+</svg>
