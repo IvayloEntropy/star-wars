@@ -4,5 +4,5 @@ dotenv.config()
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  starWarsApiAddress: 'https://swapi.dev/api'
+  starWarsApiAddress: process.env.REACT_APP_STAR_WARS_API
 }

@@ -17,5 +17,8 @@ export const CharacterFields = [
   }
 ]
 
-export const invalidCharacterFields = [ 'n/a', 'none', 'n/a', 'unknown', '']
+export const invalidCharacterFields = [ 'n/a', 'none', 'unknown', '']
 
+export function checkField (value) {
+  return !invalidCharacterFields.includes(value)
+}

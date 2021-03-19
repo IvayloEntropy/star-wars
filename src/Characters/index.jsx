@@ -18,29 +18,32 @@ class Characters extends Component {
       prev: ''
     }
   }
+  
+  onPageChange = async (pageUrl) => {
+    window.scrollTo(0, 0)
+    const page = queryString.parse(pageUrl).page
+    await this.fetchCharacters(this.state.name, page)
+  }
+
+  onSearch = async (name) => {
+    window.scrollTo(0, 0)
+    this.setState({name})
+    await this.fetchCharacters(name, 1)
+  }
+
   render () {
 
-    const onPageChange = async (pageUrl) => {
-      const page = queryString.parse(pageUrl).page
-      await this.fetchCharacters(this.state.name, page)
-    }
-
-    const onSearch = async (name) => {
-      this.setState({name})
-      await this.fetchCharacters(name, 1)
-    }
 
     return (
       <CharactersContainer>
-        <CharacterSearchBar onSearch={ onSearch } />
+        <CharacterSearchBar onSearch={ this.onSearch } />
         <CharacterCards people={this.state.people} count={this.state.count} />
-        { this.state.count > 10 && <CharacterPagination pagination={this.state.pagination} onPageChange={ onPageChange } /> }
+        { this.state.count > 10 && <CharacterPagination pagination={this.state.pagination} onPageChange={ this.onPageChange } /> }
       </CharactersContainer>
     )
   }
 
   async fetchCharacters (name, page) {
-    window.scrollTo(0, 0)
     this.props.dispatch({ type: 'DATA_LOADING' })
     await axios.get(`${envConfig.starWarsApiAddress}/people?page=${page}`, {
       params: {

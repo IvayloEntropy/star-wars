@@ -19,7 +19,7 @@ export const PageButton = styled.button`
         opacity: 0.9
     }
     :disabled {
-        color: #a4a4a4;
+        color: ${color.textDisabled};
         cursor: unset;
     }
 `

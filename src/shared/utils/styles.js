@@ -2,6 +2,7 @@ export const color = {
   primary: '#FFE81F', // yellow
   textLight: '#E6E6E6',
   textDark: '#212421',
+  textDisabled: '#a4a4a4',
   textActive: '#FFE81F',
   inputPlaceholder: '#282C28',
   inputText: '#282C28',
